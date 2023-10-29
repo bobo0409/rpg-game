@@ -78,7 +78,7 @@ let PlayerMoves = {
           getPlayerHealth.innerHTML = "Health: " + player.health;
         }
       }
-    } else if (getEnemySpeed >= GetPlayerSpeed) {
+    } else if (getEnemySpeed >= getPlayerSpeed) {
       let enemyAttackValues = enemyAttack();
       let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
       player.health = player.health - totalDamage;
